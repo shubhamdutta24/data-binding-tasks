@@ -1,0 +1,8 @@
+<label>
+  Please enter your text here:
+  <input type="text" [formControl]="inputText" (ngSubmit)="onSubmit()" >
+</label>
+<button type="submit" (click)="onSubmit()" >Submit</button>
+<p>
+  Value: {{inputText.value}}
+</p>
