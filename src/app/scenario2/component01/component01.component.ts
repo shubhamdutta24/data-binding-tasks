@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-component1',
-  templateUrl: './component1.component.html',
-  styleUrls: ['./component1.component.css']
+  selector: 'app-component01',
+  templateUrl: './component01.component.html',
+  styleUrls: ['./component01.component.css']
 })
-export class Component1Component implements OnInit {
+export class Component01Component implements OnInit {
 
   value = 'tonight';
   inputText = 'type here';
@@ -29,8 +29,8 @@ export class Component1Component implements OnInit {
     this.inputText += event.target.value;
   }
 
-  onClickLog() {
-    console.log(this.inputText);
-  }
+  // onClickLog() {
+  //   console.log(this.inputText);
+  // }
 
 }
