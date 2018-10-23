@@ -1,5 +1,6 @@
-<h2>Should we colonize the Universe?</h2>
-<h3>Agree: {{agreed}}, Disagree: {{disagreed}} </h3>
-<app-child4 *ngFor="let voter of voters" 
-[name]="voter"
-(voted)="onVoted($event)" ></app-child4>
+<h2>Scenario 4</h2>
+This is parent.
+<br>
+<p>Parent variable: {{name}} </p>
+<hr>
+<app-child4 (pass)="onPass($event)" ></app-child4>

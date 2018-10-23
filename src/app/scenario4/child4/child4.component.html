@@ -1,3 +1,5 @@
-<h3> {{name}} </h3>
-<button (click)="vote(true)" [disabled]="didVote" >Agree</button>
-<button (click)="vote(false)" [disabled]="didVote" >Disagree</button>
+This is child
+<br>
+Entered text: {{master}}
+<br>
+<input #box (keyup.enter)="onEnter(box.value)" >

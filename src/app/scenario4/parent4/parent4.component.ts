@@ -7,12 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Parent4Component implements OnInit {
 
-  agreed = 0;
-  disagreed = 0;
-  voters = ['Mr.IQ', 'Ms. Universe', 'Bombasto'];
+  name: string;
 
-  onVoted(agreed: boolean) {
-    agreed ? this.agreed++ : this.disagreed++;
+  onPass(name: string) {
+    this.name = name;
   }
 
   constructor() { }

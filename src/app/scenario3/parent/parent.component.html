@@ -1,3 +1,9 @@
-<h2> {{master}} controls heroes </h2>
+<h2>Scenario 3</h2>
+<p>This is master</p>
+Entered text: {{master}}
+<br>
+<input #box (keyup.enter)="onEnter(box.value)" >
+<p>{{master}}</p>
+
 <app-child [master]="master" >
 </app-child>

@@ -7,30 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Component01Component implements OnInit {
 
-  value = 'tonight';
-  inputText = 'type here';
+  inputText = '';
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  // onClickPrint() {
-  //   this.value = this.value === 'tonight' ? 'today' : 'tonight';
-  // }
-
-  // onKey(event: any) {
-  //   this.value = '';
-  //   this.value += event.target.value;
-  // }
-
   onTyping(event: any) {
     this.inputText = '';
     this.inputText += event.target.value;
   }
-
-  // onClickLog() {
-  //   console.log(this.inputText);
-  // }
 
 }

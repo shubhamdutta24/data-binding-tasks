@@ -7,13 +7,15 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class Child4Component implements OnInit {
 
+  master: string;
   @Input() name: string;
-  @Output() voted = new EventEmitter<boolean>();
-  didVote = false;
 
-  vote(agreed: boolean) {
-    this.voted.emit(agreed);
-    this.didVote = true;
+
+  @Output() pass = new EventEmitter<string>();
+
+  onEnter(value: string) {
+    this.master = value;
+    this.pass.emit(this.master);
   }
 
   constructor() { }

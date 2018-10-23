@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentComponent implements OnInit {
 
-  master = 'Master';
+  master: string;
+
+  onEnter(value: string) {
+    this.master = value;
+  }
 
   constructor() { }
 
